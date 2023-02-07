@@ -1,7 +1,6 @@
 import "./App.css";
 import "./page.css";
 import Home from "./pages/Home";
-import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import CoffeeSubscription from "./pages/CoffeeSubscription";
 import CoffeeBeans from "./pages/CofffeeBeans";
@@ -21,13 +20,6 @@ import StoreLocator from "./pages/StoreLocator";
 import EgiftCertificate from "./pages/EgiftCertificate";
 
 function App() {
-  const [openMenu, setOpenMenu] = useState(false);
-  const [openCart, setOpenCart] = useState(false);
-
-  const toggleCart = () => {
-    setOpenCart(!openCart);
-  };
-
   return (
     <Routes>
       <Route path="/" element={<Home />} />
