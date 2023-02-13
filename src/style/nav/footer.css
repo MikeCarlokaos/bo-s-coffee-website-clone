@@ -1,0 +1,185 @@
+.footer-section {
+  position: fixed;
+  bottom: 0;
+  z-index: 9;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  background-color: #f4f1ec;
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 40px 0;
+  color: #363636;
+}
+
+@media screen and (max-width: 750px) {
+  .footer {
+    padding: 10px 0;
+  }
+}
+
+.footer-content {
+  max-width: 980px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 750px) {
+  .footer-content {
+    width: 100%;
+  }
+}
+
+.footer-content li {
+  list-style: none;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding-right: 20px;
+}
+
+
+.footer-top {
+  display: flex;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.footer-list {
+  width: 26%;
+  padding: 0 10px;
+}
+
+.footer-list ul {
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.footer-signup {
+  width: 48%;
+  padding: 0 10px;
+}
+
+
+.footer-label {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.footer-subtext {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.footer-subsribe {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+}
+
+.footer-email {
+  width: 63%;
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px 10px 10px;
+  line-height: 24px;
+  text-size-adjust: 100%;
+}
+
+.footer-email::placeholder {
+  color: #363636;
+  opacity: 1;
+}
+
+.footer-btn-wrapper {
+  width: 37%;
+  height: 100%;
+  text-align: right;
+  display: inline-block;
+  position: relative;
+  color: #363636;
+  font-size: 16px;
+}
+
+.footer-subscribe-btn {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  color: #363636;
+  letter-spacing: 1.25px;
+  cursor: pointer;
+  text-align: end;
+  padding: 2px 7px;
+}
+
+.footer-btn-wrapper svg {
+  width: 20px;
+  height: 7px;
+  padding-left: 15px;
+  transition: all 1s ease-in-out;
+}
+
+.footer-btn-wrapper svg:hover {
+  transform: translateX(50%);
+}
+
+.footer-email-line {
+  width: 100%;
+  border-top: 2px solid black;
+}
+
+
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+}
+
+.footer-share {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.footer-svg-wrapper {
+  margin-right: 10px;
+  width: 20px;
+  height: 26px;
+  margin-right: 10px;
+}
+
+.footer-svg-wrapper svg {
+  width: 20px;
+  height: 20px;
+}
+
+
+.footer-copyright {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}

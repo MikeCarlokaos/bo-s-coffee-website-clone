@@ -1,4 +1,5 @@
 import React from "react";
+import "../../../../style/nav/navbarOverlay.css";
 import { Link } from "react-router-dom";
 
 const OverlayMenu = ({ openMenu, setOpenMenu, openSidebar }) => {

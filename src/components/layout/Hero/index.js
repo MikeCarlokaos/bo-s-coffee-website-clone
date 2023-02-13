@@ -1,4 +1,5 @@
 import React from "react";
+import "../../../style/home/midHero.css";
 
 const Hero = () => {
   return (

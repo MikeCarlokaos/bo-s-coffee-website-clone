@@ -1,0 +1,291 @@
+.item {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  .item {
+    height: 100%;
+  }
+}
+
+.item-container {
+  max-width: 980px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 750px) {
+  .item-container {
+    width: 100%;
+  }
+}
+
+.item-card {
+  display: flex;
+  width: 100%;
+  padding: 60px 20px;
+}
+
+@media screen and (max-width: 750px) {
+  .item-card {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+
+.item-img-wrapper {
+  width: 470px;
+  height: 470px;
+}
+
+@media screen and (max-width: 750px) {
+  .item-img-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+}
+
+.item-img {
+  width: 100%;
+  height: 100%;
+}
+
+.item-content {
+  margin-bottom: 60px;
+}
+
+.item-detail {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 470px;
+  padding: 0 60px;
+}
+
+@media screen and (max-width: 750px) {
+  .item-detail {
+    width: 100%;
+  }
+}
+
+.item-detail p {
+  color: black;
+}
+
+.item-title {
+  font-size: 2.5rem;
+  line-height: 1.225;
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.item-price {
+  margin: 0;
+}
+
+.item-text {
+  font-size: smaller;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.item-text a {
+  text-decoration: underline;
+  color: #000000;
+}
+
+.item-text a:hover {
+  color: #733311;
+}
+
+.item-form {
+  width: 100%;
+  height: 140px;
+}
+
+.select-wrap {
+  width: 100%;
+  border: none;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.select-wrap label {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #733311;
+  padding: 10px 20px;
+  position: absolute;
+  left: 0;
+  white-space: nowrap;
+}
+
+.select-wrap label::after {
+  content: "-";
+  position: absolute;
+  right: 7px;
+}
+
+.select-wrap select {
+  width: 100%;
+  background-color: #fff;
+  text-transform: capitalize;
+  border: 0px;
+  height: 50px;
+  font-size: 14px;
+  padding: 10px 28px 10px 130px;
+  appearance: none;
+}
+
+.arrow-icon {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  right: 20px;
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid rgb(44, 43, 43);
+}
+
+
+.select-wrap option {
+  background-color: #f4f1ec;
+}
+
+.item-add-btn {
+  width: 100%;
+  border: 2px solid #501818;
+  margin-top: 30px;
+  padding: 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  transition: all .2s ease-in-out;
+}
+
+.item-add-btn:hover {
+  border: 3px solid #501818;
+}
+
+.item-share {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.item-share svg {
+  fill: #733311;
+  width: 20px;
+  height: 15px;
+}
+
+.item-share li {
+  list-style: none;
+}
+
+.item-share-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.detail-ref,
+.share-btn {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #733311;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.detail-ref:hover,
+.share-btn:hover {
+  opacity: 0.8;
+}
+
+.detail-ref {
+  padding: 20px 10px 20px 30px;
+  text-align: end;
+}
+
+.share-btn {
+  height: 59.5px;
+  padding: 20px;
+}
+
+.item-share-detail {
+  width: 100%;
+}
+
+
+.share-btn-svg-wrapper,
+.detail-ref-svg-wrapper {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  width: 20px;
+  height: 15px;
+}
+
+.social-share-wrapper {
+  position: absolute;
+  top: 100%;
+  left: -2%;
+  width: 175px;
+  height: 40px;
+  display: none;
+}
+
+.social-share-item-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.social-share-item {
+  position: relative;
+  border: 2px solid #36363636;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+}
+
+.social-share-item-list svg {
+  position: absolute;
+  top: 22%;
+  right: 18%;
+  width: 20px;
+  height: 20px;
+}
+
+.show-share {
+  position: absolute;
+  top: 100%;
+  left: -2%;
+  width: 175px;
+  height: 40px;
+  display: block;
+}

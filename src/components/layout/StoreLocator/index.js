@@ -1,4 +1,5 @@
 import React from "react";
+import "../../../style/home/locator.css";
 
 const StoreLocator = () => {
   return (

@@ -1,4 +1,5 @@
 import React from "react";
+import "../../../style/home/item.css";
 import ItemCard from "./ItemCard";
 import items from "../../data/layout/items";
 

@@ -1,4 +1,5 @@
 import React from "react";
+import "../../../style/home/menu.css";
 import ViewMenu from "./ViewMenu";
 import menus from "../../data/layout/menus";
 import Aos from "aos";

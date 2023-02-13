@@ -39,7 +39,7 @@ function Home() {
           <Menu />
           <StoreLocator />
           <Order />
-          <div>
+          <div className="extend">
             <br />
             <br />
             <br />

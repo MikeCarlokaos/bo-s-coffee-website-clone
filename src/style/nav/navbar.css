@@ -1,0 +1,195 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  width: 100%;
+  height: 80px;
+  animation: fadeIn 0.3s ease-in-out 0 1 normal none;
+  transition: all 300ms ease-in-out;
+}
+
+.navbar-wrapper {
+  width: 980px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 5% 1fr 5%;
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 750px) {
+  .navbar-wrapper {
+    width: 100%;
+  }
+}
+
+.hamburger-container {
+  height: 50px;
+  width: 50px;
+}
+
+.hide-icon {
+  display: none;
+}
+
+.hamburger-lines {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburger-lines:hover {
+  transform: scaleY(1.3);
+}
+
+.close-lines {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border: none;
+  background-color: transparent;
+  transition: 0.5s ease-in-out;
+}
+
+.close-lines:hover {
+  transform: scale(1.3);
+}
+
+.line {
+  position: absolute;
+  display: block;
+  background-color: #501818;
+  height: 2px;
+  width: 24px;
+  left: 50%;
+  transform: translate(-50%)
+}
+
+
+.line1 {
+  top: 16px;
+  transition: 0.3s ease-in-out;
+}
+
+
+.line2 {
+  top: 24px;
+  transition: 0.2s ease-in-out;
+}
+
+.line3 {
+  top: 32px;
+  transition: 0.3s ease-in-out;
+}
+
+
+.x-line {
+  position: absolute;
+  display: block;
+  background-color: #501818;
+  height: 2px;
+  width: 24px;
+  left: 30%;
+  transform: translate(-30%)
+}
+
+.x-line1 {
+  transform: rotate(45deg);
+  transition: 0.3s ease-in-out;
+}
+
+.x-line2 {
+  transform: scaleY(0);
+  transition: 0.2s ease-in-out;
+}
+
+.x-line3 {
+  transform: rotate(-45deg);
+  transition: 0.3s ease-in-out;
+}
+
+
+.nav-logo-container {
+  width: 219px;
+  height: 80px;
+}
+
+.nav-logo-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.nav-logo {
+  width: 100%;
+  height: 100%;
+}
+
+.cart-container {
+  width: 50px;
+  height: 50px;
+}
+
+.cart-logo-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+}
+
+.cart-logo-wrapper svg {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  fill: #501818;
+  width: 26px;
+  height: 30px;
+  transition: all .5s ease-in-out;
+}
+
+.cart-logo-wrapper svg:hover {
+  transform: scale(1.2);
+}
+
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  width: 100%;
+  background: #f4f1ec;
+  animation: fadeIn 0.3s ease-in-out 0 1 normal none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.sticky-nav .line {
+  background: #000000;
+}
+
+.sticky-nav svg {
+  fill: #000000;
+}

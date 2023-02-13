@@ -1,0 +1,78 @@
+.form-wrapper {
+  width: 980px;
+  height: 100%;
+}
+
+.form-wrapper form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px;
+  margin: 100px 0;
+}
+
+.form-wrapper label {
+  font-size: 2.5rem;
+  font-family: 'Arvo', serif;
+  text-align: start;
+}
+
+.form-wrapper input {
+  border: none;
+  padding: 15px 20px;
+  margin: 10px 0;
+}
+
+.form-wrapper input::placeholder {
+  color: #363636;
+  opacity: .5;
+}
+
+.submit-wrapper {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.submit-wrapper button {
+  background-color: #501818;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1.25px;
+  cursor: pointer;
+}
+
+.submit-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1.50px;
+}
+
+.submit-nav a {
+  color: #000000;
+}
+
+.submit-nav a:hover {
+  opacity: 0.5;
+}
+
+/* Create Account */
+
+.form-name {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 49% 49%;
+  gap: 2%;
+  justify-content: start;
+}

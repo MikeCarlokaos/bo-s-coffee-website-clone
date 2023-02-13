@@ -1,4 +1,5 @@
 import React from "react";
+import "../../../style/home/catalogue.css";
 import CatalogueCard from "./CatalogueCard";
 import catalogues from "../../data/layout/catalogues";
 

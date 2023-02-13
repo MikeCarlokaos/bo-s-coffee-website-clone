@@ -1,5 +1,6 @@
 import "./App.css";
-import "./page.css";
+import "./style/pages/page.css";
+import "./style/login/login.css";
 import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
 import CoffeeSubscription from "./pages/CoffeeSubscription";

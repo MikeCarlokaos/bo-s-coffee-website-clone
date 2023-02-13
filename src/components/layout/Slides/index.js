@@ -1,3 +1,4 @@
+import "../../../style/home/slides.css";
 import React, { useState } from "react";
 
 const Slides = () => {

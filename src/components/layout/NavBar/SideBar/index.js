@@ -1,4 +1,5 @@
 import React from "react";
+import "../../../../style/nav/offCanvas.css";
 
 const SideBar = ({ toggleCart }) => {
   return (

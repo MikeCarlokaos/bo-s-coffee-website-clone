@@ -1,0 +1,89 @@
+.locator {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.locator-img-wrapper {
+  width: 50%;
+  height: 100%;
+}
+
+.locator-img {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://cdn.shopify.com/s/files/1/0405/8411/8424/files/Tribute_2.jpg?v=1620935610");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.locator-text-wrapper {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.locator-text {
+  position: relative;
+  padding: 220px 40px;
+  margin: 0 70px;
+}
+
+@media screen and (max-width: 750px) {
+  .locator-text {
+    padding: 220px 10px;
+  }
+}
+
+.locator-text h2::before {
+  content: "";
+  position: absolute;
+  top: 33%;
+  left: 8.5%;
+  background-color: #501818;
+  height: 6px;
+  width: 80px;
+  margin: 0 auto 20px;
+  animation: dash 0.7s linear 0.2s 1 normal forwards;
+  transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 750px) {
+  .locator-text h2::before {
+    top: 28%;
+  }
+}
+
+.locator-text h2 {
+  font-size: 2rem;
+  line-height: 1.225;
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.locator-text a {
+  border: 2px solid #501818;
+  background-color: #501818;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 15px 30px;
+  font-weight: 700;
+  font-size: 12px;
+  transition: all .2s ease-in-out;
+  white-space: nowrap;
+}
+
+.locator-text a:hover {
+  padding: 17px 32px;
+  transform: translate(-2px, -2px)
+}

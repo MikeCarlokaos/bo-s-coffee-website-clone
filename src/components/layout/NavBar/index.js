@@ -1,3 +1,4 @@
+import "../../../style/nav/navbar.css";
 import React, { useState, useEffect } from "react";
 
 const Navbar = ({ openMenu, setOpenMenu, openCart, setOpenCart }) => {

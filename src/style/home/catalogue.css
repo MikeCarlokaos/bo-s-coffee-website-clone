@@ -1,0 +1,102 @@
+.catalogue {
+  width: 100%;
+  height: 167vh;
+  padding: 60px 0;
+}
+
+@media screen and (max-width: 750px) {
+  .catalogue {
+    height: 100%;
+  }
+}
+
+.catalogue-header-wrapper {
+  margin-bottom: 20px;
+}
+
+.catalogue-header {
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 1.225;
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+.catalogue-container {
+  width: 100%;
+  height: auto;
+  padding: 60px 0;
+}
+
+.catalogue-wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+.catalogue-card-wrapper {
+  width: 960px;
+  display: block;
+  zoom: 1;
+  margin-left: -20px;
+}
+
+.catalogue-card-wrapper ::after {
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 750px) {
+  .catalogue-card-wrapper {
+    width: 100%;
+  }
+
+  .catalogue-card-wrapper {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+}
+
+.catalogue-card {
+  width: 320px;
+  display: block;
+  float: left;
+  padding-left: 20px;
+  margin-bottom: 40px;
+}
+
+.catalogue-img-wrapper {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.catalogue-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform .7s;
+}
+
+.catalogue-img:hover {
+  transform: scale(1.05);
+  transform-origin: 50% 50%;
+}
+
+.catalogue-card p {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  font-stretch: 100%;
+
+}
