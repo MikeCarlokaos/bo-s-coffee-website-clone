@@ -175,6 +175,15 @@
   animation: fadeIn 0.3s ease-in-out 0 1 normal none;
 }
 
+@media only screen and (max-device-width : 750px) {
+  .fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
