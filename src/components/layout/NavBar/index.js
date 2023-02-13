@@ -12,7 +12,7 @@ const Navbar = ({ openMenu, setOpenMenu, openCart, setOpenCart }) => {
   const stickNavbar = () => {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
-      windowHeight > 80 ? setStickyClass("sticky-nav") : setStickyClass("");
+      windowHeight > 40 ? setStickyClass("sticky-nav") : setStickyClass("");
     }
   };
 
@@ -26,7 +26,7 @@ const Navbar = ({ openMenu, setOpenMenu, openCart, setOpenCart }) => {
 
   return (
     <header>
-      <nav className={openMenu ? "sticky-nav" : `navbar  ${stickyClass}`}>
+      <nav className={openMenu ? "sticky-nav" : `navbar ${stickyClass}`}>
         <div className={openCart ? `navbar  ${stickyClass}` : ""}>
           <div className="navbar-wrapper">
             <div className="hamburger-container">
